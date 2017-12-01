@@ -1,0 +1,60 @@
+ DanasApp{
+    border : 2px solid #000000;
+    overflow:hidden;
+}
+
+DanasApp div {
+    min-height: 400px;
+    padding: 10px;
+}
+
+  .flex-container {
+      display: -webkit-flex;
+
+      display: flex;
+      flex-direction: row;
+      -webkit-flex-flow: nowrap;
+      flex-flow: nowrap;
+      text-align: center;
+
+  }
+
+ .flex-container  {
+
+     display: flex;
+     padding: 15px;
+     -webkit-flex: 1 100%;
+     flex: 1 100%;
+     flex-direction: row;
+
+ }
+
+ article {
+     text-align: left;
+     display: block;
+ }
+ nav{
+     display:block;
+
+     text-align: center;
+
+ }
+
+
+ header {background: cornflowerblue;color:white;}
+ footer {background: cornflowerblue;color:white;}
+ nav {background:antiquewhite; color: cornflowerblue; font-style: italic; font-size: xx-large; text-align: center;}
+
+ nav ul {
+     list-style-type: none;
+     padding: 0;
+ }
+ nav ul a {
+     text-decoration: none;
+ }
+
+ @media all and (min-width: 768px) {
+     .nav {text-align:center;-webkit-flex: 1 auto;flex:2 auto;-webkit-order:1;order:1;}
+     .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+     footer {-webkit-order:3;order:3;}
+ }
